@@ -1,0 +1,5 @@
+RULES
+
+use up, down, left, right to move the snake
+use q to quit the game
+the snake eats the food and incrreases the length and self collision results to game over
