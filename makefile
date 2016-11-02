@@ -1,7 +1,8 @@
-all: try
-try: project.o
-	gcc project.o -o try -lncurses
-project.o: project.c
-	gcc project.c -lncurses
+snake: snake.o main.o
+	cc snake.o main.o -lncurses -o project
+snake.o: snake.c snake.h
+	cc -c snake.c -lncurses
+main.o: main.c snake.h
+	cc -c main.c -lncurses
 clean:
 	rm *.o
